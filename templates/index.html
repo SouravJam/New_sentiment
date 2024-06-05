@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4285F4; /* Bold blue color */
+            color: white; /* White text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #FFF; /* White background for the card */
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #4285F4; /* Blue color for headings */
+            margin-bottom: 1rem;
+        }
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        input[type="submit"] {
+            background-color: #4285F4; /* Blue color for button */
+            color: white;
+            padding: 0.7rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        input[type="submit"]:hover {
+            background-color: #357AE8; /* Darker blue color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Sentiment Analysis!</h1>
+        <p>Enter your text below and let us analyze its sentiment for you:</p>
+        <form action="/analyze" method="post">
+            <label for="text">Enter text:</label>
+            <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Analyze">
+        </form>
+    </div>
+</body>
+</html>
